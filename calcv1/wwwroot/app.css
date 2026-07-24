@@ -8,79 +8,89 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    background: #1a1a2e;
+    background: #202020;
     font-family: 'Segoe UI', Arial, sans-serif;
 }
 
-.calc {
-    background: #2a2a3d;
-    padding: 20px;
-    border-radius: 16px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
-    width: max-content;
-}
-
 .disp {
-    margin-bottom: 15px;
+    background: #1c1c1c;
+    padding: 0;
+    border-radius: 8px 8px 0 0;
+    width: 344px;
 }
 
 input#display {
-    background-color: #0f0f1a;
-    color: #00ff9d;
-    padding: 15px;
-    width: 260px;
-    font-size: 28px;
+    background-color: #1c1c1c;
+    color: #ffffff;
+    padding: 20px 15px;
+    width: 100%;
+    font-size: 40px;
     text-align: right;
-    border: 1px solid #3a3a52;
-    border-radius: 8px;
-    font-family: 'Consolas', monospace;
+    border: none;
+    font-family: 'Segoe UI', Arial, sans-serif;
 }
 
 .oper {
     display: grid;
-    grid-template-columns: repeat(4, 60px);
-    gap: 8px;
+    grid-template-columns: repeat(4, 80px);
+    gap: 1px;
+    background: #1c1c1c;
+    padding: 1px;
+    border-radius: 0 0 8px 8px;
+    width: 344px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
 }
 
 button {
-    height: 60px;
-    font-size: 20px;
-    font-weight: 600;
+    height: 65px;
+    font-size: 22px;
+    font-weight: 400;
     border: none;
-    border-radius: 10px;
-    background: #3a3a52;
+    background: #2b2b2b;
     color: #fff;
     cursor: pointer;
-    transition: background 0.15s ease, transform 0.1s ease;
+    transition: background 0.1s ease;
 }
 
     button:hover {
-        background: #4a4a68;
+        background: #3f3f3f;
     }
 
     button:active {
-        transform: scale(0.95);
-        background: #55557a;
+        background: #505050;
     }
 
 .oper button:nth-child(4),
 .oper button:nth-child(8),
 .oper button:nth-child(12),
 .oper button:nth-child(16) {
-    background: #ff9500;
+    background: #2b2b2b;
+    color: #66b2ff;
+    font-size: 24px;
 }
 
     .oper button:nth-child(4):hover,
     .oper button:nth-child(8):hover,
     .oper button:nth-child(12):hover,
     .oper button:nth-child(16):hover {
-        background: #ffab33;
+        background: #3f3f3f;
     }
 
 .oper button:nth-child(13) {
-    background: #d64541;
+    background: #2b2b2b;
+    color: #ffffff;
 }
 
 .oper button:nth-child(15) {
-    background: #00b894;
+    background: #66b2ff;
+    color: #000;
+    font-size: 24px;
 }
+
+    .oper button:nth-child(15):hover {
+        background: #85c2ff;
+    }
+
+    .oper button:nth-child(15):active {
+        background: #4a9eff;
+    }
